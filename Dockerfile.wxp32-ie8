@@ -152,7 +152,7 @@ RUN set -ex; \
     rm -f $IE_DRIVER_FILENAME
 
 # install internet explorer
-ARG IE_INSTALL_URL=https://download.microsoft.com/download/3/8/C/38CE0ABB-01FD-4C0A-A569-BC5E82C34A17/IE8-WindowsXP-KB2936068-x86-ENU.exe
+ARG IE_INSTALL_URL=http://download.microsoft.com/download/C/C/0/CC0BD555-33DD-411E-936B-73AC6F95AE11/IE8-WindowsXP-x86-ENU.exe
 ARG IE_INSTALL_SHA256=8bda23c78cdcd9d01c364a01c6d639dfb2d11550a5521b8a81c808c1a2b1824e
 RUN if [ -n "$IE_INSTALL_URL" ]; then \
       set -ex; \
